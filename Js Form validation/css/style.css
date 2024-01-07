@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+}
+.container {
+    background-color: aliceblue;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0 .3);
+    width: 400px;
+}
+h2{
+    text-align: center;
+    margin: 0 0 20px;
+}
+.form{
+    padding: 30px 40px;
+    border: 1px solid;
+    box-shadow: rgb(36, 160, 160);
+}
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+
+}
+.form-control label{
+    color: #777;
+    border-radius: 4px;
+    display: block;
+    width:100%;
+    padding: 10px;
+    font-size: 14px;
+}
+.form-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+}
+.form-control input:focus {
+outline : 0;
+border-color: #777;
+}
+.form-control.success input{
+    border-color: green;
+}
+.form-control.error input{
+    border-color: red;
+}
+.form-control small{
+    color: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+.form-control error small{
+    visibility: visible;
+}
+.form button{
+    cursor: pointer;
+    background-color: rgb(58, 58, 233);
+    border: 2px solid  rgb(58, 58, 233);
+    border-radius: 5px;
+    color: aliceblue;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+}
+.form button:hover{
+  color: cornflowerblue;
+  background-color: rgb(41, 167, 195);
+ 
+}
