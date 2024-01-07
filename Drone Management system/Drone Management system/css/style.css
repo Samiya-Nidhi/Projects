@@ -1,0 +1,386 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+a{
+text-decoration: none;
+display: inline-block ;
+}
+
+ul{
+list-style: none;
+padding: 0;
+margin:0;
+}
+.container{
+    max-width: 1166px;
+}
+.navbar 
+{
+    padding :0;
+    width: 100%;
+    position: absolute;
+    top:50px;
+}
+.navbar .navbar-nav{
+    column-gap : 100px ;
+
+}
+.navbar .navbar-nav .nav-item .nav-link {
+    padding: 0;
+    color: #203239;
+    font-size: 16px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    position :relative;
+}
+.navbar .navbar-nav .nav-item a.nav-link.active {
+   
+ 
+    font-weight: 600;
+    
+}
+.navbar .navbar-nav .nav-item .nav-link::after {
+  content: "";
+  position: absolute;
+  left : 50%;
+  bottom: -4px;
+  width: 20px;
+  height :3px;
+  transform: translateX(-50%);
+  background-color: #F6762E;
+  border-radius: 1.5px;
+  opacity :0;
+  transition: .4s;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover {
+    font-weight: 600;
+
+   
+}
+.navbar .navbar-nav .nav-item .nav-link:hover:after {
+    opacity : 1;
+   
+}
+.navbar .navbar-nav .nav-item .active::after {
+    opacity : 1;
+   
+}
+
+#banner-part {
+    background: #EEEDDE;
+    padding: 188px 0 120px;
+}
+#banner-part img {
+   width: 100%;
+}
+#banner-part .banner-text {
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+#banner-part h1 {
+    color: #203239;
+    font-size: 55px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+ }
+ #banner-part p {
+    color: rgba(32, 50, 57, 0.55);
+    font-size: 16px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+    width: 544px;
+ }
+ #banner-part form {
+    position:relative;
+ }
+ #banner-part form i {
+    position: absolute;
+    left :24px;
+    top :50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+ }
+ #banner-part form input {
+    width:508px;
+    padding : 24px 54px 22px ;
+    background-color: white;
+    outline :0;
+    border :0;
+    border-radius: 15px;
+    color: rgba(32, 50, 57, 0.55);
+
+font-size: 16px;
+font-family: Poppins;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+margin-right: 15px;
+ }
+ #banner-part form button {
+    color: rgba(32, 50, 57, 0.55);
+    padding : 23px 41px ;
+    outline :0;
+    border :0;
+    border-radius: 15px;
+    background: #FFF; 
+   font-size: 16px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;  
+ }
+
+
+
+
+ #property-part  h2{
+    padding :100px 0 ;
+ }
+
+ #property-part .title h2{
+
+display: flex;
+width: 533px;
+flex-direction: column;
+color: #203239;
+
+font-size: 36px;
+font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+line-height: 150%;
+
+
+
+ }
+
+ #property-part .main .pilih{
+    width : 300px;
+   
+    border-radius: 10px;
+    padding : 20px 20px 20px 33px ;
+    position :relative ;
+
+ }
+ #property-part .main .pilih:hover{
+    border: 1px solid #EEEDDE ;
+    opacity: 1;
+ }
+
+ #property-part .main .pilih::after{
+   
+   content :"" ;
+   width : 8px ;
+   height :30px;
+   background: #F6762E;
+   border-radius: 4px;
+   position: absolute;
+   top : 17px;
+   left :0 ;
+
+
+
+ }
+ 
+ #property-part .main .pilih .title{
+   display: flex ;
+   justify-content: space-between;
+
+   
+
+ }
+ #property-part .main {
+    display: flex ;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    
+  }
+  #property-part .main .pilih .title h2{
+    color: #203239;
+    font-size: 16px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    
+    
+ 
+  }
+  #property-part .main .pilih .title p{
+   
+    color: rgba(32, 50, 57, 0.55);
+    font-size: 16px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+    
+ 
+  }
+  #property-part .main .pilih .title a{
+   
+    color: #203239;
+    font-size: 16px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    top :50 px ;
+    bottom :20 px;
+    
+ 
+  }
+
+  #resident-part {
+   background: #EEEDDE;
+   padding : 68px 0 163px ;
+  }
+  #resident-part p {
+    color: #FF7527;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  #resident-part .image{
+    position: relative;
+    margin-top : 64px;
+    margin-bottom: 68px;
+   
+    
+  }
+  #resident-part .image .back{
+    border-radius: 10px;
+    width: 331px;
+    height:455px;
+    
+    
+   
+   }
+   #resident-part .image .front{
+    border-radius: 10px;
+    position: absolute;
+    top : 60px;
+    left : 167px;
+    width: 358px;
+    height:490px;
+  
+   
+   }
+   #resident-part .text{
+   
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+
+   
+   }
+   #resident-part .text h3{
+    color: #203239;
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+
+   }
+   #resident-part .text p{
+    color: #203239;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+    margin: 24px 0 48px;
+
+   }
+   #resident-part .text a{
+    border-radius: 10px;
+    border: 1px solid #203239;
+    padding: 13px 41px;
+    color: #203239;
+    margin-right: 30px;
+    font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  transition: .4s;
+}
+#resident-part .text a i{
+margin-right: 20px;
+}
+   #resident-part .text a:hover{
+    opacity: 1;
+    background-color: black;
+    color :#FFF
+   }
+
+   #kota {
+    padding: 68px 0;
+   }
+   #kota .title p {
+    color: #FF7527;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  #kota .title h2 {
+    color: #203239;
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+  }
+  #kota .main .image {
+    width: 373px;
+    height: 454px;
+   margin-top: 64px;
+   margin-bottom: 16px;
+
+
+  }
+  #kota .main .text h3 {
+    color: #203239;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 150%;
+
+  }
+  #kota .main .text p {
+    color: #203239;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: 30px;
+margin-top: 8px;
+margin-bottom: 68px;
+
+  }
+ 
+   .title h2 {
+    color: #203239;
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+  }
