@@ -1,0 +1,588 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+
+}
+h1,h2,h3,h4,h5,h6,p {
+    margin:0;
+}
+.title {
+  text-align: center;
+}
+.title h2{
+    color: var(--dark-01, #151515);
+    font-family: Inter;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+.title p {
+    color: var(--dark-03, #737373);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+/* common css end */
+nav{
+    padding:0 !important; 
+    position: absolute !important;
+    top: 30px;
+    width: 100%;
+    z-index: 2;
+
+
+
+}
+nav  .navbar-brand img{
+    border-radius: 50%;
+    height: 30%;
+    width: 30%;
+
+}
+nav .navbar-nav{
+    column-gap: 67px;
+}
+
+nav .navbar-nav .nav-item .nav-link {
+    color: white;
+    font-weight: bolder;
+    font-size: 35px;
+
+}
+nav .navbar-nav .nav-item .nav-link.active {
+    color: #d50808;
+    font-weight: 700;
+   
+}
+nav .navbar-nav .nav-item .nav-link:hover {
+    color: #4756DF;
+    /* font-weight: 700; */
+    transform: scale(1.55s);
+}
+
+.btn {
+    padding : 15px 42px;
+    border-radius: 10px;
+    background: #381384; 
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+
+} 
+.btn:hover {
+    background: #4df453; 
+    color: #FFF;
+
+}
+/*--- Banner part CSS----*/
+#banner-part{
+    position: relative;
+    height: 1330px;
+   
+   
+}
+
+#banner-part .overlay{
+    position:absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+   
+   
+}
+#banner-part .slide {
+    height: 1330px;
+    background: url(../images/section1aa.jpg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 315px 0 176px;
+    position : relative;
+   
+    z-index: 1; 
+}
+#banner-part .slide::after{
+    content: "";
+    position: absolute ;
+    left:0;
+    top :0;
+    width:100%;
+    height :100%;
+    background-color: rgba(0, 0, 0,0.5);
+    z-index: -1;
+}
+#banner-part .slide2 {
+    height: 1330px;
+    background: url(../images/section1a.jpg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 315px 0 176px;
+    position : relative;
+    
+    z-index: 1; 
+}
+#banner-part .slide2::after{
+    content: "";
+    position: absolute ;
+    left:0;
+    top :0;
+    width:100%;
+    height :100%;
+    background-color: rgba(0, 0, 0,0.5);
+    z-index: -1;
+}
+#banner-part .slide3 {
+    height: 1330px;
+    background: url(../images/section1b.webp); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 315px 0 176px;
+    position : relative;
+    z-index: 1; 
+}
+#banner-part .slide3::after{
+    content: "";
+    position: absolute ;
+    left:0;
+    top :0;
+    width:100%;
+    height :100%;
+    background-color: rgba(0, 0, 0,0.5);
+    z-index: -1;
+}
+#banner-part .slide4 {
+    height: 1330px;
+    background: url(../images/section1b.webp); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 315px 0 176px;
+    position : relative;
+    z-index: 1; 
+}
+#banner-part .slide4::after{
+    content: "";
+    position: absolute ;
+    left:0;
+    top :0;
+    width:100%;
+    height :100%;
+    background-color: rgba(0, 0, 0,0.5);
+    z-index: -1;
+}
+#banner-part  .container {
+    
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+#banner-part .container p {
+    color: #FFF;
+    
+    font-family: Inter;
+    font-size: 100px;
+   
+    font-weight: 1000px;
+    line-height: 50px;
+   
+    margin: 71px auto 60px;
+   
+
+    width: 621px;
+}
+
+#banner-part  .overlay .container h1 {
+    width: 950px;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 170px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 120%; 
+    margin-top: 500px;
+    padding-top: 500px;
+    margin-bottom: 51px;
+    align-items: center;
+
+  
+
+
+}
+
+#banner-part  .overlay  .btn {
+    display: inline-flex ;
+    padding: 10px 42px;
+    align-items: flex-start;
+    gap: 70px ;
+    border-radius: 20px ;
+    background: #6A4DF4;
+}
+
+.banner-slide {
+    position: relative;
+}
+
+ 
+ .banner-slide ul
+ {
+        position: absolute;
+        left:30%;
+        transform: translateY(-50%);
+        bottom: 53px;
+        column-gap: 10px;
+        display: inline-flex;
+        z-index: 999;
+       
+ }
+ .banner-slide ul li button
+ {
+    width: 10px;
+    height: 10px;
+    background: #4756DF;
+    border-radius: 50%;
+    font-size: 0;
+    column-gap: 20px; 
+    
+   
+}
+#banner-part  .container {
+    
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    
+}
+
+#banner-part  .overlay .container h1 {
+    width: 950px;
+    color: white;
+    text-align: center;
+    font-family: Inter;
+    font-size: 75px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; 
+    margin: auto;
+    padding-top: 315px;
+    margin-bottom: 51px;
+    align-items: center;
+
+  }
+  #banner-part .container p {
+    color: white;
+    
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+   
+    margin: 51px auto 40px;
+   
+
+    width: 621px;
+}
+#banner-part  .overlay .container .btn {
+    display: inline-flex;
+    padding: 15px 42px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 10px;
+    background: #6A4DF4;
+}
+.banner-slide {
+    position: relative;
+}
+.banner-slide ul
+{
+       position: absolute;
+       left:50%;
+       transform: translateY(-50%);
+       bottom: 53px;
+       column-gap: 2px;
+       display: inline-flex;
+       z-index: 999;
+}
+.banner-slide ul li button
+{
+   width: 24px;
+   height: 24px;
+   background: #4756DF;
+   border-radius: 50%;
+   font-size: 0;
+}
+/* banner end_ about us start */
+
+#about{
+   background-color:  #d2d0d0;
+   padding-bottom: 70px;
+}
+.abt {
+    background-color: #d2d0d0;
+    overflow: hidden;
+    padding-top:70px;
+}
+#about .abt h1 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    color: rgb(222, 14, 14);
+    font-size: 55px;
+    margin-top: 50px;
+    text-align: center;
+
+
+ }
+ #about .container{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 100% ;
+    margin: 65px auto;
+    padding: 80px 50px 20px;
+   
+  
+
+ }
+ .content{
+    flex:  1;
+    width: 600px;
+    margin: 0px auto;
+ }
+ .content h2{
+    font-size: 38px;
+    margin-bottom: 20px;
+    color:#333;
+ }
+ .content p{
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    color:#666;
+ }
+ .content button{
+    display: inline-block;
+    background-color: #ff4500;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+ }
+ .content button:hover{
+    background-color: #f7a500;
+    transform: scale(1.25);
+    }
+ .img-c{
+    flex:1;
+    width: 660px;
+    margin: auto;
+    padding-left: 50px;
+ }
+ .img-c img{
+    width: 100%;
+    height: 600px;
+    border-radius: 10px;
+
+ }
+ /* About Us end */
+
+ /* Department Start */
+ #service-part  {
+    padding-top: 150px;
+    padding-bottom: 103px;
+    
+   
+
+
+}
+#service-part .title{
+    margin-bottom: 50px;
+}
+#service-part .title h2{
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    color: #381384;
+    padding-top: 20px;
+    padding-bottom: 20px;;
+}
+#service-part .title p{
+width: 609px;
+margin: 0 auto;
+font-size: 24px;
+padding-bottom: 20px;
+}
+
+#service-part .main {
+    background-color: white;
+    text-align: center ;
+    padding: 80px 49px 46px;
+    border-radius: 20px;
+    transition: all linear .4s;
+
+}
+#service-part .main:hover {
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
+    transform: scale(1.125);
+}
+#service-part .main h3 {
+    color: var(--dark-01, #151515);
+    text-align: center;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 40px 0 20px;
+ 
+}
+#service-part  .row{
+    row-gap: 24px;
+}
+#service-part .main p {
+    color: var(--dark-03, #737373);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    
+    width: 326px;
+   
+
+}
+/* Department End */
+
+#Notice-part  {
+    padding-top: 150px;
+    padding-bottom: 103px;
+    
+   
+
+
+}
+#Notice-part .title{
+    margin-bottom: 50px;
+    padding-bottom: 25px;
+}
+#Notice-part .title h1{
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    color: #381384;
+    padding-top: 20px;
+    padding-bottom: 20px;;
+}
+#Notice-part .title p{
+width: 609px;
+margin: 0 auto;
+color: darkblue;
+font-size: 20px;
+padding-bottom: 20px;
+}
+
+#Notice-part .main {
+    background-color: rgb(204, 191, 191);
+    text-align: center ;
+    padding: 80px 49px 46px;
+    border-radius: 20px;
+    transition: all linear .4s;
+
+}
+#Notice-part .main:hover {
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
+    transform: scale(1.125);
+}
+#Notice-part .main h3 {
+    color: var(--dark-01, #8a0303);
+    text-align: center;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 40px 0 20px;
+ 
+}
+#Notice-part  .row{
+    row-gap: 24px;
+}
+#Notice-part  .row img{
+   width: 200px;
+   height: 170px;
+}
+#Notice-part .main p {
+    color: var(--dark-03, #000000);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    
+    width: 326px;
+   }
+
+   /* Footer part */
+
+   .card {
+    background-color: rgb(206, 206, 249);
+    margin-bottom: 20px;
+    height: 350px;
+   }
+   .card .card-header {
+    height: 70px;
+    font-size: 30px;
+   }
+ .card-title {
+    font-size: 30px ;
+    padding-top: 20px;
+    padding-bottom: 13px;
+    font-weight: bold;
+    
+
+ }
+ .card-text {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    color: #841313;
+
+ }
+.card-footer {
+    height: 100px;
+    font-weight: bold;
+    color: orangered;
+    padding-bottom: 40px;
+    padding-bottom: 20px;
+    }
+    .card-footer h5{
+        font-weight: bold;
+        color: rgb(0, 34, 255);
+        padding-bottom: 40px;
+        padding-bottom: 20px;
+
+    }
